@@ -1,0 +1,127 @@
+/*
+Name : form.css
+Purpose : Style the applications forms and whats inside of the form
+Author: Krzysztof Bas 
+Date: 07/04/2020
+*/
+
+/* https://www.w3schools.com/howto/howto_css_two_columns.asp  */
+/* START OF 2 COLUMN LAYOUT FROM W3SCHOOLS.COM  */
+* {
+	box-sizing: border-box;    										/* Padding and border are included in the total dimensions of the element */
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+	float: left;													/* Float from the left */
+	width: 50%;														/* Set width to 50% of the container */
+	padding: 10px;													/* Set padding to 10 pixels  */
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";													/* Add empty String under the row */
+	display: table;													/* Display as block */
+	clear: both;													/* Clear floats from both sides of the row */						
+}
+/* END OF 2 COLUMN LAYOUT  */
+
+/* Style input fields */
+input,select{
+	width:70%;														/* Set width of the input field to 75% of the container */
+	height:8%;														/* Set height of the input field to 10% of the container */
+	border:none;													/* Remove border */
+	background-color: #3b3b42;										/* Set background color of the input field*/
+	margin-bottom:2px;												/* Set margin to 2 pixels from the bottom of the input field */
+	padding-left:8px;												/* Set padding from the left to 8 pixels */												
+	font-size:16;     												/* Set font size to 15  */
+	font-weight:bold;												/* Set all labels to bold */
+	color: #eeeeee;													/* Set color of the font */
+	outline: none;													/* Remove outline*/
+}
+/* Style Select tag  */
+select{
+	font-size:18;													/* Set font size for the select tag options*/
+	width:65%;														/* Set width of the select tag */
+}
+
+/* Set atributes for a placeholder */
+::placeholder {			
+  color: #cdcdcd;													/* Set color of the placeholder */
+}
+/* Style labels */
+label{
+	font-weight:bold;												/* Set all labels to bold */
+	font-size:20;													/* Set font size of the labels to 20 */
+
+}
+
+/* Class used to style form paragraphs */
+.formBorder {
+	border-bottom: solid 3px #eeeeee;								/* Set bottom border of the element */
+	margin-top:10px;												/* Set margin from the top to 10pixels */
+
+}
+/* when mouse-over change border color */
+.formBorder:hover{
+	border-bottom: solid 3px #4169E1;								/* Set border  */
+}
+
+/* When mouse over 'formBorder' change color of the label inside of 'formBorder' */
+.formBorder:hover label{
+	color: #4169E1;													/* Set bottom border of the element */
+}
+
+.formBorder:hover select{
+	color: #4169E1;													/* Set bottom border of the element */
+}
+
+
+/* Style and position form buttons */
+.formButton{
+	width:10%;														/* Set width to 10% of the containers width */
+	height:8%;														/* Set height to 8% of the containers height */
+	position:relative;												/* Set Relative positioning */
+	left:78%;														/* Push element 78% of the containers width from  the left */
+	top:3%;															/* Push element 3% of the containers height from  the top */
+	border : solid 3px #eeeeee;										/* Set border of the button */
+	font-weight:bold;												/* Set font to bold */
+	font-size:15;													/* Set font size to 15 */
+	
+}
+
+/* Mouse over form buttons */
+.formButton:hover{	
+	color:#4169E1;													/* change font color of the button */
+	border : solid 3px #4169E1;										/* Set border for the button */
+	cursor: pointer;												/* Change the mouse cursor to a pointer when over the menu elemets */
+	
+}
+
+/* Style and position form buttons */
+.sortButton{
+	width:10%;														/* Set width to 10% of the containers width */
+	height:4%;														/* Set height to 8% of the containers height */
+	position:relative;												/* Set Relative positioning */
+	left:5%;														/* Push element 78% of the containers width from  the left */
+	top:3%;															/* Push element 3% of the containers height from  the top */
+	border : solid 3px #eeeeee;										/* Set border of the button */
+	font-weight:bold;												/* Set font to bold */
+	font-size:15;													/* Set font size to 15 */
+	
+}
+
+/* Mouse over form buttons */
+.sortButton:hover{	
+	color:#4169E1;													/* change font color of the button */
+	border : solid 3px #4169E1;										/* Set border for the button */
+	cursor: pointer;												/* Change the mouse cursor to a pointer when over the menu elemets */
+	
+}
+
+.sortButton:disabled{
+	color:#4169E1;													/* change font color of the button */
+	border : solid 3px #4169E1;										/* Set border for the button */
+	
+}
